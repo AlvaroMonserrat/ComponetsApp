@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ComponetsApp</string>
+
+    <string-array name="options">
+        <item>Hot</item>
+        <item>Mild</item>
+        <item>Cold</item>
+    </string-array>
+</resources>
