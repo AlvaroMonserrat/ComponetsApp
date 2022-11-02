@@ -1,5 +1,6 @@
 package com.rrat.componetsapp.componets
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -37,7 +38,7 @@ fun CheckBoxGroup(){
                 onCheckedChange = { listStates[index] = it}
             )
             
-            if (listStates[index]){
+            AnimatedVisibility (listStates[index]){
                 TextField(
                     modifier = Modifier.padding(horizontal = 16.dp),
                     value = listAnswer[index],
